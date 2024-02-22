@@ -1,0 +1,16 @@
+*{font-family: 'LINE Seed Sans KR',sans-serif;}
+:root{
+/* Color styles */
+--p-r-i-m-a-r-y-900: rgba(0, 0, 228, 1);
+--p-r-i-m-a-r-y-800: rgba(0, 15, 201, 1);
+--p-r-i-m-a-r-y-700: rgba(54, 11, 238, 1);
+--p-r-i-m-a-r-y-600: rgba(80, 23, 246, 1);
+--p-r-i-m-a-r-y-500: rgba(95, 28, 252, 1);
+--p-r-i-m-a-r-y-400: rgba(126, 72, 254, 1);
+--p-r-i-m-a-r-y-300: rgba(154, 108, 255, 1);
+--p-r-i-m-a-r-y-200: rgba(185, 153, 254, 1);
+--p-r-i-m-a-r-y-100: rgba(213, 194, 253, 1);
+--p-r-i-m-a-r-y-50: rgba(240, 230, 255, 1);
+--black: rgba(23, 23, 27, 1);
+--white: rgba(255, 255, 255, 1);
+}

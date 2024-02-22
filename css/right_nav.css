@@ -1,0 +1,6 @@
+#right_nav{position: fixed;right:64px;top:50%;transform:translateY(-50%);z-index: 10000;font-size: 20px;}
+#right_nav ul li{padding: 4px 10px;}
+#right_nav ul li:hover a{color: rgba(0, 15, 201, 1)}
+#right_nav ul li>a{line-height: 30px;letter-spacing: -0.44px; color: #000;}
+#right_nav ul li.active a{font-weight: 700;}
+#right_nav.up ul li a{color: white;}
