@@ -13,60 +13,60 @@ $(function () {
     }
   });
 
- /* 지도 마크 클릭 => 모달창 */
-$(function () {
-  $("#shinchon_mark").click(function () {
-    $("#shinchon_card").fadeIn();
-    $("#sadang_card").fadeOut();
-    $("#yeongdeungpo_card").fadeOut();
-    $("#cheonho_card").fadeOut();
-    $(".modal_background_dim").css({'display': 'flex'});
-    
-  });
-  $("#shinchon_closeBtn, .modal_background_dim").click(function () {
-    $("#shinchon_card").fadeOut();
-    $(".modal_background_dim").css({'display': 'none'})
-  });/* 신촌 */
+  /* 지도 마크 클릭 => 모달창 */
+  $(function () {
+    $("#shinchon_mark").click(function () {
+      $("#shinchon_card").fadeIn();
+      $("#sadang_card").fadeOut();
+      $("#yeongdeungpo_card").fadeOut();
+      $("#cheonho_card").fadeOut();
+      $(".modal_background_dim").css({ 'display': 'flex' });
 
-  $("#sadang_mark").click(function () {
-    $("#shinchon_card").fadeOut();
-    $("#sadang_card").fadeIn();
-    $("#yeongdeungpo_card").fadeOut();
-    $("#cheonho_card").fadeOut();
-    $(".modal_background_dim").css({'display': 'flex'});
-    
-  });
-  $("#sadang_closeBtn, .modal_background_dim").click(function () {
-    $("#sadang_card").fadeOut();
-    $(".modal_background_dim").css({'display': 'none'})
-  });/* 사당 */
+    });
+    $("#shinchon_closeBtn, .modal_background_dim").click(function () {
+      $("#shinchon_card").fadeOut();
+      $(".modal_background_dim").css({ 'display': 'none' })
+    });/* 신촌 */
 
-  $("#yeongdeungpo_mark").click(function () {
-    $("#shinchon_card").fadeOut();
-    $("#sadang_card").fadeOut();
-    $("#yeongdeungpo_card").fadeIn();
-    $("#cheonho_card").fadeOut();
-    $(".modal_background_dim").css({'display': 'flex'});
-    
-  });
-  $("#yeongdeungpo_closeBtn, .modal_background_dim").click(function () {
-    $("#yeongdeungpo_card").fadeOut();
-    $(".modal_background_dim").css({'display': 'none'})
-  });/* 영등포 */
+    $("#sadang_mark").click(function () {
+      $("#shinchon_card").fadeOut();
+      $("#sadang_card").fadeIn();
+      $("#yeongdeungpo_card").fadeOut();
+      $("#cheonho_card").fadeOut();
+      $(".modal_background_dim").css({ 'display': 'flex' });
 
-  $("#cheonho_mark").click(function () {
-    $("#shinchon_card").fadeOut();
-    $("#sadang_card").fadeOut();
-    $("#yeongdeungpo_card").fadeOut();
-    $("#cheonho_card").fadeIn();
-    $(".modal_background_dim").css({'display': 'flex'});
-    
+    });
+    $("#sadang_closeBtn, .modal_background_dim").click(function () {
+      $("#sadang_card").fadeOut();
+      $(".modal_background_dim").css({ 'display': 'none' })
+    });/* 사당 */
+
+    $("#yeongdeungpo_mark").click(function () {
+      $("#shinchon_card").fadeOut();
+      $("#sadang_card").fadeOut();
+      $("#yeongdeungpo_card").fadeIn();
+      $("#cheonho_card").fadeOut();
+      $(".modal_background_dim").css({ 'display': 'flex' });
+
+    });
+    $("#yeongdeungpo_closeBtn, .modal_background_dim").click(function () {
+      $("#yeongdeungpo_card").fadeOut();
+      $(".modal_background_dim").css({ 'display': 'none' })
+    });/* 영등포 */
+
+    $("#cheonho_mark").click(function () {
+      $("#shinchon_card").fadeOut();
+      $("#sadang_card").fadeOut();
+      $("#yeongdeungpo_card").fadeOut();
+      $("#cheonho_card").fadeIn();
+      $(".modal_background_dim").css({ 'display': 'flex' });
+
+    });
+    $("#cheonho_closeBtn, .modal_background_dim").click(function () {
+      $("#cheonho_card").fadeOut();
+      $(".modal_background_dim").css({ 'display': 'none' })
+    });/* 천호 */
   });
-  $("#cheonho_closeBtn, .modal_background_dim").click(function () {
-    $("#cheonho_card").fadeOut();
-    $(".modal_background_dim").css({'display': 'none'})
-  });/* 천호 */
-});
 
 
 
@@ -81,7 +81,7 @@ $(function () {
     } else {
       $('.header').removeClass('upOn').addClass('on');
     };
-    $('.gnb').css("height","334px"); 
+    $('.gnb').css("height", "334px");
     $('.dep2').stop().slideDown(500);
     $('.header-bg').stop().slideDown(400);
   }).on('mouseleave', function () {
@@ -100,7 +100,7 @@ $(function () {
       });
       $('.dep2').stop().slideUp(200);
     }
-    $('.gnb').css("height","114px");
+    $('.gnb').css("height", "114px");
   });
 
   /* fullpage */
@@ -120,7 +120,7 @@ $(function () {
       if (destination.index == 0 || destination.index == 3 || destination.index == 4 || destination.index == 6 || destination.index == 7) {
         $('.header').removeClass('up upOn');
         $('#right_nav').removeClass('up');
-      }else if (destination.index == 2 || destination.index == 5) {
+      } else if (destination.index == 2 || destination.index == 5) {
         $('.header').removeClass('on').addClass('up');
         $('#right_nav').addClass('up');
       } else if (destination.index == 1) {
@@ -128,9 +128,9 @@ $(function () {
         $('#right_nav').removeClass('up');
         $('.content-top-box').delay(0).animate({ top: 0, opacity: 1 }, 500);
         $('.content-bottom-box').delay(300).animate({ top: 0, opacity: 1 }, 500);
-      }else if (destination.index == 8) {
+      } else if (destination.index == 8) {
         $('#right_nav').addClass('up');
-      } 
+      }
       if (isMouseOnGnb) {
         // 마우스가 .gnb 위에 있을 경우에만 실행할 로직
         // 예: 헤더에 특정 클래스를 추가하거나 제거하는 로직
@@ -139,7 +139,7 @@ $(function () {
         } else if (destination.index == 2 || destination.index == 5) {
           $('.header').removeClass('on').addClass('upOn');
         }
-    }
+      }
     },//afterload콜백
 
     /* onLeave: function(origin, destination, direction, trigger){
