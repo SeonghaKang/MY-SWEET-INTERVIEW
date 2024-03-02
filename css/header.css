@@ -1,14 +1,86 @@
-#topBox{width:100%;min-width: 1200px;position: fixed;top:0;left:0;z-index: 5000}
-.header{width: 100%;min-width: 1200px; height: 144px;position: relative;display: flex;align-items: center;}
-.header .inner{display: flex;padding: 40px 64px;align-items: center;}
-.header #logo{width: 194px; font-size: 24px; font-weight: 700; padding-right: 374px;height: 64px;display: flex;align-items: center;}
-.header .gnb{display: flex;gap: 80px; position: relative;z-index: 500;}
-.header .gnb .dep1{width:115px;position: relative;height: 36px;display: flex;align-items: center;}
-.header .gnb .dep1>a{font-size: 24px;font-weight: 400;line-height: 36px;letter-spacing: -0.44px;}
-.header .gnb .dep2{padding-top: 41px;position: absolute;top:36px;width: 115px;display: none;/* position: absolute;top:144px;left:0;padding-top: 41px;width: 110px;display: none */}
-.header .gnb .dep2>li>a{font-size: 20px;font-weight: 400;line-height: 26px;}
-.header .gnb .dep2 li{padding-bottom: 14px;}
-.gnb_bg{width: 100%;height: 133px;position: absolute; top: 144px;  background-color: rgba(0,0,0,0.8);display: none;}
+.header {
+  width: 100%;
+  min-width: 1200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+}
+.header .header-bg{
+  width: 100%;
+  min-width: 1200px;
+  height: 334px;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.header .inner {
+  position: absolute;
+  top: 0;
+  display: flex;
+  /* padding: 40px 64px; */
+ /*  align-items: ; */
+  justify-content: space-between;
+  margin-left: 64px;
+  width: 1407px;
+}
+
+.header #logo {
+  width: 138px;
+  height: 114px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 133.333% */
+}
+
+.header .gnb {
+  display: flex;
+  gap: 80px;
+  position: relative;
+  z-index: 500;
+}
+
+.header .gnb .dep1 {
+  width: 115px;
+  position: relative;
+  height: 114px;
+  display: flex;
+  align-items: center;
+}
+
+.header .gnb .dep1>a {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 114px;
+  letter-spacing: -0.528px;
+}
+
+.header .gnb .dep2 {
+  padding-top: 54px;
+  position: absolute;
+  top: 114px;
+  width: 115px;
+  display: none; 
+  /* position: absolute;top:144px;left:0;padding-top: 41px;width: 110px;display: none */
+}
+
+.header .gnb .dep2>li>a {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;  
+}
+
+.header .gnb .dep2 li {
+  padding-bottom: 20px;
+}
+
+
 
 /* 해더 컨트롤 gnb hover 시 */
 /*
@@ -24,20 +96,57 @@
 글씨색 로고,ul은 black li는 666666 
 */
 /*addClass('on')*/
-.header.on{background: rgba(0,0,0,0.8);transition: background 0.35s}
-.header.on #logo>a{color:white}
-.header.on .dep1>a{color:white}
-.header.on .dep2 li>a{color:#A5A5A5}
-.header.on .dep2 li:hover a{color:white}
 
-/*addClass('up')*//* 
+.header.on .header-bg{
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.header.on #logo>a {
+  color: white
+}
+
+.header.on .dep1>a {
+  color: white
+}
+
+.header.on .dep2 li>a {
+  color: #A5A5A5
+}
+
+.header.on .dep2 li:hover a {
+  color: white
+}
+
+/*addClass('up')
+섹션3,6에 도착했을 때
+*/
+/* 
 .header.up{background-color: black;} */
-.header.up #logo>a{color:white}
-.header.up .dep1>a{color:white}
+.header.up #logo>a {
+  color: white
+}
+
+.header.up .dep1>a {
+  color: white
+}
+
 /* addClass('upOn') */
-.header.upOn{background: rgba(255,255,255,.8);transition: background 0.35s}
-.header.upOn #logo>a{color:#17171B}
-.header.upOn .dep1>a{color:#17171B}
-.header.upOn .dep2 li>a{color:#666666}
-.header.upOn .dep2 li:hover a{color:#000}
-.header.upOn .gnb_bg{background: rgba(255,255,255,.8)}
+.header.upOn .header-bg{
+  background: rgba(255, 255, 255, .8);
+}
+
+.header.upOn #logo>a {
+  color: #17171B
+}
+
+.header.upOn .dep1>a {
+  color: #17171B
+}
+
+.header.upOn .dep2 li>a {
+  color: #666666
+}
+
+.header.upOn .dep2 li:hover a {
+  color: #000
+}

@@ -1,4 +1,4 @@
-*{font-family: 'LINE Seed Sans KR',sans-serif;}
+body{font-family: 'Line Seed Sans', sans-serif;}
 :root{
 /* Color styles */
 --p-r-i-m-a-r-y-900: rgba(0, 0, 228, 1);
@@ -12,5 +12,4 @@
 --p-r-i-m-a-r-y-100: rgba(213, 194, 253, 1);
 --p-r-i-m-a-r-y-50: rgba(240, 230, 255, 1);
 --black: rgba(23, 23, 27, 1);
---white: rgba(255, 255, 255, 1);
-}
+--white: rgba(255, 255, 255, 1);}

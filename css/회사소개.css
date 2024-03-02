@@ -1,0 +1,8 @@
+.ABOUT_section1{
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/상세페이지/회사소개1bg.png) no-repeat;
+  background-size: cover;
+  position: relative; 
+
+}
