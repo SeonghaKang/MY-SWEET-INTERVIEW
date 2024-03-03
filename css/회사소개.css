@@ -6,6 +6,33 @@
   position: relative; 
 
 }
+.ABOUT1contents{
+  width: 100vw;
+  height: 100vh;
+  position: relative; 
+  display: flex;
+}
+.ABOUT_text{
+  position: absolute;
+  top: 24.6%;
+  left: 19%;
+  color: white;
+}
+.About_top{font-weight: 700; margin-bottom: 68px;}
+.About_top p{font-size: 24px;line-height: 18px; margin-bottom: 38px;}
+.About_top h3{font-size: 56px;line-height: 41px;}
+
+.About_bottom .bottom_top_txt h6{font-size: 32px; font-weight:400; line-height: 23px;
+margin-bottom: 28px;}
+.About_bottom .bottom_top_txt h5{font-size: 40px; font-weight: 700;line-height: 40px;}
+
+.bottom_txt{margin-top:20%; font-size: 18px;}
+.bottom_txt p{margin-bottom: 20px;}
+.bottom_txt>p span{font-weight: 700;}
+.bottom_txt #italicstyle{font-style:italic}
+
+.ABOUT_symbol{position: absolute;top: 33%;left: 51.3%;}
+
 
 
 /* 섹션2 */
