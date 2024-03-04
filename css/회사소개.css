@@ -34,6 +34,24 @@ margin-bottom: 28px;}
 .ABOUT_symbol{position: absolute;top: 33%;left: 51.3%;}
 
 
+.ABOUT_section2{
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/상세페이지/회사연혁.png) no-repeat;
+  background-size: cover;
+  position: relative; 
+}
+.ABOUT_section3{
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/상세페이지/방송출현.png) no-repeat;
+  background-size: cover;
+  position: relative; 
+}
+
+
+
+
 
 /* 섹션2 */
 .ABOUT_section2{
